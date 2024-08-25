@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <img class="header_log" src="imagenes/alura.svg" alt="">
+        </div>
+    </header>
+        
+    <main>
+        <div class="main">
+            <div class="left">
+                <textarea id="ingresoTexto" placeholder="Ingrese su texto aqui" class="ingreso_texto" id=""></textarea>
+                <div class="left_footer">
+                    <img src="./imagenes/exclamacion.svg" alt="">
+
+                    <span class="left_alert">Solo minusculas y sin caracteres especiales</span>
+                    <div class="left_botones">
+                        <button id="botonEncriptar" class="boton_encriptar">
+                            Encriptar
+                        </button>
+                        <button id="botonDesencriptar" class="boton_desencriptar">
+                            Desencriptar
+                        </button>
+                    </div>    
+                </div>    
+            </div>
+
+            <div id="right" class="right ajustar">
+                <img id="dibujo" class= "dibujo" src="imagenes/dibujo.svg" alt="">
+                <textarea id="mensajeFinal" class="mensaje_final ajustar" placeholder="Ningun mensaje encontrado"></textarea>
+                <p id="rightInfo" class="right_info">Ingresa el texto que desees encriptar</p>
+                <button id="botonCopiar" class="boton_copiar oculto">
+                    Copiar
+                </button>
+        </div>
+        </div>
+    </main>
+
+    <!--<footer>
+    </footer> |-->
+
+    <script src="script.js"></script>
+</body>
+</html>
